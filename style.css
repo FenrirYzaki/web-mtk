@@ -1,0 +1,198 @@
+:root {
+    --primary: #fff;
+    --secondary: #89b0ae;
+    --tertiary: #ffd6ba;
+    --bg: #006d77;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+}
+
+/* ----- Navbar ----- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: var(--bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: var(--primary);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.8);
+}
+
+/* ----- Hero Section ----- */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5rem;
+}
+
+.hero .content p {
+    font-size: 1.4rem;
+}
+
+.hero .content p span {
+    color: var(--bg);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: var(--primary);
+    background-color: var(--bg);
+    border: 0.2rem solid var(--secondary);
+    border-radius: 3rem;
+    box-shadow: 0 0 5px var(--secondary);
+    transition: 0.5s;
+}
+
+.hero .content .cta:hover {
+    border: 0.2rem solid var(--bg);
+}
+
+/* ----- Materi Section ----- */
+
+.materi {
+    padding: 8rem 7% 8rem;
+    background-color: var(--secondary);
+}
+
+.materi h2 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.materi h2 span::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--primary);
+    transform: scaleX(0.2);
+}
+
+.materi .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.materi .row a{
+    background-color: var(--bg);
+    margin: 1rem;
+    padding: 6rem 6rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: 0.2s;
+}
+
+
+.materi .row a:hover {
+    transform: scale(1.02);
+} */
+
+
+/* ----- Footer Section ----- */
+
+.footer {
+    background-color: var(--bg);
+}
+
+.footer h4 {
+    color: var(--primary);
+    background-color: var(--bg);
+    padding: 2rem 0;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+/* Media Queries */
+
+/* Laptop */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
